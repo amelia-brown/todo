@@ -1,0 +1,118 @@
+.shadow, .content, li, #new-container {
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2); }
+
+body {
+  width: 100%;
+  height: 1vh;
+  background: #00796b; }
+
+.content {
+  background: #1de9b6;
+  border-radius: 9px;
+  width: 600px;
+  margin: 4rem auto;
+  padding: 2rem; }
+
+h1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 5em;
+  text-align: center;
+  color: #fff;
+  margin: 1rem 0;
+  text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2); }
+
+ul {
+  padding-left: 0; }
+
+li {
+  list-style-type: none;
+  height: 50px;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  justify-content: center;
+  border-radius: 9px; }
+
+input {
+  height: 50px;
+  line-height: 50px;
+  display: inline-block;
+  margin: 0 auto;
+  border: 0;
+  padding: 0 0 0 20px;
+  color: #00796b;
+  font-size: 1.5em; }
+
+.body-container {
+  width: 300px;
+  margin: 0 auto; }
+
+#new-container {
+  width: 300px;
+  margin: 2rem 0;
+  display: flex;
+  border-radius: 9px;
+  display: -webkit-flex;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  justify-content: center;
+  -webkit-justify-content: center; }
+
+#new {
+  background: rgba(255, 255, 255, 0.5);
+  width: 230px;
+  border-radius: 9px 0 0 9px;
+  display: inline-block; }
+  #new::-webkit-input-placeholder {
+    color: #00796b; }
+  #new::-moz-input-placeholder {
+    color: #00796b; }
+
+#new-action {
+  display: block;
+  height: 50px;
+  width: 50px;
+  border-radius: 0 9px 9px 0;
+  background: #00796b;
+  line-height: 50px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer; }
+
+.list-item {
+  width: 250px;
+  border-radius: 9px 0 0 9px;
+  background: rgba(255, 255, 255, 0.9);
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+  margin: 0 auto;
+  border: 0;
+  padding-left: 20px;
+  color: #00796b;
+  font-size: 1.5em; }
+
+.action-items {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  webkit-flex-direction: column; }
+  .action-items .action {
+    height: 25px;
+    width: 50px;
+    display: block;
+    color: #fff;
+    text-align: center;
+    line-height: 25px;
+    cursor: pointer; }
+  .action-items .check {
+    background: #00c853;
+    border-radius: 0 9px 0 0; }
+  .action-items .ex {
+    background: #ff4433;
+    border-radius: 0 0 9px 0; }
+
+/*# sourceMappingURL=styles.css.map */

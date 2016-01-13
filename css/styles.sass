@@ -1,0 +1,131 @@
+//VARIABLES
+$blue: #1de9b6
+$sans: "Open Sans", sans-serif
+$red: #ff4433
+$green: #00c853
+$darkblue: #00796b
+
+.shadow
+  box-shadow: 2px 2px 15px rgba(0,0,0,0.2)
+
+//BODY
+body
+  width: 100%
+  height: 1vh
+  background: $darkblue
+
+.content
+  background: $blue
+  border-radius: 9px
+  width: 600px
+  margin: 4rem auto
+  padding: 2rem
+  @extend .shadow
+
+h1
+  font-family: $sans
+  font-size: 5em
+  text-align: center
+  color: #fff
+  margin: 1rem 0
+  text-shadow: 2px 2px 15px rgba(0,0,0,0.2)
+
+ul
+  padding-left: 0
+
+li
+  list-style-type: none
+  height: 50px
+  display: flex
+  display: -webkit-flex
+  flex-direction: row
+  -webkit-flex-direction: row
+  justify-content: center
+  border-radius: 9px
+  @extend .shadow
+input
+  height: 50px
+  line-height: 50px
+  display: inline-block
+  margin: 0 auto
+  border: 0
+  padding: 0 0 0 20px
+  color: $darkblue
+  font-size: 1.5em
+
+.body-container
+  width: 300px
+  margin: 0 auto
+
+#new-container
+  width: 300px
+  margin: 2rem 0
+  display: flex
+  border-radius: 9px
+  display: -webkit-flex
+  flex-direction: row
+  -webkit-flex-direction: row
+  justify-content: center
+  -webkit-justify-content: center
+  @extend .shadow
+
+#new
+  background: rgba(255, 255, 255, 0.5)
+  width: 230px
+  border-radius: 9px 0 0 9px
+  display: inline-block
+
+  &::-webkit-input-placeholder
+    color: $darkblue
+  &::-moz-input-placeholder
+    color: $darkblue
+
+
+
+#new-action
+  display: block
+  height: 50px
+  width: 50px
+  border-radius: 0 9px 9px 0
+  background: $darkblue
+  line-height: 50px
+  text-align: center
+  color: #fff
+  cursor: pointer
+
+//added list item styles
+.list-item
+  width: 250px
+  border-radius: 9px 0 0 9px
+  background: rgba(255,255,255,0.9)
+  display: inline-block
+  height: 50px
+  line-height: 50px
+  margin: 0 auto
+  border: 0
+  padding-left: 20px
+  color: $darkblue
+  font-size: 1.5em
+
+.action-items
+  height: 50px
+  width: 50px
+  display: flex
+  display: -webkit-flex
+  flex-direction: column
+  webkit-flex-direction: column
+  .action
+    height: 25px
+    width: 50px
+    display: block
+    color: #fff
+    text-align: center
+    line-height: 25px
+    cursor: pointer
+
+  .check
+    background: $green
+    border-radius: 0 9px 0 0
+  .ex
+    background: $red
+    border-radius: 0 0 9px 0
