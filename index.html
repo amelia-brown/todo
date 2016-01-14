@@ -11,18 +11,23 @@
       <h1>What to do?</h1>
       <div class="body-container">
         <div id="new-container">
-          <input type="text" id="new" placeholder="New list item">
+          <form id="form">
+            <input type="text" id="new" placeholder="New list item">
+          </form>
           <span id="new-action"><i class="fa fa-plus"></i></span>
         </div>
         <ul id="list">
-          <!--<li>
+          <script type="template" id="list-item">
+          <li>
             <div class="list-item">
+              //<p class="list-text"></p>
             </div>
             <div class="action-items">
               <span class="action check"><i class="fa fa-check"></i></span>
               <span class="action ex"><i class="fa fa-times"></i></span>
             </div>
-          </li>-->
+          </li>
+          </script>
         </ul>
       </div>
     </div>
