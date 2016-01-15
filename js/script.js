@@ -12,26 +12,21 @@ function create() {
     //}
     //alert(text);
     var text = document.getElementById("new").value;
-    var item = document.createElement("div");
+    var item = document.createElement("li");
     item.innerHTML = template;
     var listText = item.querySelector('.list-item').innerHTML = text;
     var list = document.querySelector('#list');
-
     list.appendChild(item);
     var text = document.getElementById("new").value = " ";
-
-    var close = document.querySelector(".ex");
+    var close = item.querySelector(".ex");
     close.addEventListener('click', remove, false);
-
-
-
 }
 function remove(e){
   //var me = e.target.className;
   //alert(me);
-  var actionI = e.target.parentNode.parentNode.parentNode;
+  var actionI = e.target.parentNode.parentNode;
   //alert(actionI.tagName);
-  var actionUL = e.target.parentNode.parentNode.parentNode.parentNode;
+  var actionUL = e.target.parentNode.parentNode.parentNode;
   actionUL.removeChild(actionI);
   /*
 *event.target
