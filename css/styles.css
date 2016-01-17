@@ -117,4 +117,7 @@ input {
     background: #ff4433;
     border-radius: 0 0 9px 0; }
 
+.strikethrough {
+  text-decoration: line-through; }
+
 /*# sourceMappingURL=styles.css.map */
